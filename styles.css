@@ -267,3 +267,26 @@ header h1{
 
 /* footer */
 
+
+
+.redes{
+    display: grid;
+    text-align: center;
+}
+
+
+.redes.elementos{
+    color: var(--footer);
+    font-family: var(--text-font);
+    
+}
+
+.redes__titulo{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.redes__servicos{
+    padding: 6px;
+    font-weight: 600;
+}
