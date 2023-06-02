@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li{
+    list-style: none;
+}
 
 :root{
     --text-font: 'Barlow', sans-serif;
@@ -171,14 +179,14 @@ header h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 32px;
-    height: 400px;
+    gap: 10px;
+    height: 300px;
     text-align: center;
 }
 
 .client__avatar{
-    width: 100px;
-    height: 100px;
+    width: 76px;
+    height: 76px;
     border-radius: 50%;
     background-position: center;
 }
@@ -267,26 +275,30 @@ header h1{
 
 /* footer */
 
-
-
-.redes{
-    display: grid;
-    text-align: center;
-}
-
-
-.redes.elementos{
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    background-color: #90d4c5;   
     color: var(--footer);
-    font-family: var(--text-font);
-    
 }
 
-.redes__titulo{
-    font-size: 2rem;
+footer h2{
+    font-size: 2.2rem;
     font-weight: 900;
 }
 
-.redes__servicos{
-    padding: 6px;
+footer nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
     font-weight: 600;
+}
+
+footer>ul{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
